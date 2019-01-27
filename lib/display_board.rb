@@ -1,6 +1,6 @@
 # Define display_board that accepts a board and prints
 # out the current state
-# board = Array.new(9) { ' ' }
+
 def display_board(board)
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
   puts '-' * 11
@@ -9,4 +9,7 @@ def display_board(board)
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
-# display_board(board)
+if $PROGRAM_NAME == __FILE__
+  board = Array.new(9) { ' ' }
+  display_board(board)
+  END
