@@ -12,4 +12,4 @@ end
 if $PROGRAM_NAME == __FILE__
   board = Array.new(9) { ' ' }
   display_board(board)
-  END
+end
